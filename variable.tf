@@ -7,3 +7,15 @@ variable "vpc_id" {
     type = string
     default = "vpc-0cadc1183a8ac658a"
 }
+
+variable "cluster_name" {
+  type        = string
+  default     = "eks_cluster"
+  description = "eks cluster"
+}
+
+variable "cluster_role_name" {
+  type        = string
+  default     = "eks_cluster_role"
+  description = "eks cluster role"
+}
